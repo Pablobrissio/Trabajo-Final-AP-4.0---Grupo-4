@@ -17,7 +17,7 @@ $(document).ready(function() {
     var nombre = $('#nombre-input').val();
     var correo = $('#correo-input').val();
     var telefono = $('#telefono-input').val();
-   
+    //muestro los datos que se ingresan al formulario
     console.log('Nombre: ' + nombre);
     console.log('Correo electrónico: ' + correo);
     console.log('Teléfono: ' + telefono);
@@ -33,7 +33,7 @@ $('#cotizacion-form').submit(function(event) {
   // Actualizacion de variables para guardar los datos
   var producto = $('#producto-input').val();
   var correo = $('#cotizacion-correo-input').val();
-
+  //muestro datos ingresados
   console.log('Producto: ' + producto);
   console.log('Correo electrónico: ' + correo);
   // Blanquo de los campos
