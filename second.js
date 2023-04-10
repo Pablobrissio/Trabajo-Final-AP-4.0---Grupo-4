@@ -1,4 +1,4 @@
-// Definimos las variables para guardar el contenido de los formularios
+// Variables para pruebas
 var nombre = "";
 var correo = "";
 var telefono = "";
@@ -9,25 +9,35 @@ var correoCotizacion = "";
 var contactoForm = document.getElementById("contact-form");
 var cotizacionForm = document.getElementById("cotizacion-form");
 
-// Agregamos event listeners a cada formulario para manejar el evento submit
-contactoForm.addEventListener("submit", function(event) {
-  event.preventDefault(); // Prevenimos el comportamiento por defecto del formulario
-  // Obtenemos el contenido de cada campo del formulario
-  nombre = document.getElementById("nombre-input").value;
-  correo = document.getElementById("correo-input").value;
-  telefono = document.getElementById("telefono-input").value;
-  // Mostramos los valores en consola para verificar que se hayan guardado correctamente
-  console.log("Nombre: " + nombre);
-  console.log("Correo: " + correo);
-  console.log("Teléfono: " + telefono);
-});
+$(document).ready(function() {
+  // Form. Contacto
+  $('#contact-form').submit(function(event) {
+    event.preventDefault();
+    // Actualizo variables para los datos
+    var nombre = $('#nombre-input').val();
+    var correo = $('#correo-input').val();
+    var telefono = $('#telefono-input').val();
+   
+    console.log('Nombre: ' + nombre);
+    console.log('Correo electrónico: ' + correo);
+    console.log('Teléfono: ' + telefono);
+    // Blanqueo de los camos
+    $('#nombre-input').val('');
+    $('#correo-input').val('');
+    $('#telefono-input').val('');
+  });
 
-cotizacionForm.addEventListener("submit", function(event) {
-  event.preventDefault(); // Prevenimos el comportamiento por defecto del formulario
-  // Obtenemos el contenido de cada campo del formulario
-  producto = document.getElementById("producto-input").value;
-  correoCotizacion = document.getElementById("cotizacion-correo-input").value;
-  // Mostramos los valores en consola para verificar que se hayan guardado correctamente
-  console.log("Producto: " + producto);
-  console.log("Correo: " + correoCotizacion);
+// Form. Cotizacion
+$('#cotizacion-form').submit(function(event) {
+  event.preventDefault();
+  // Actualizacion de variables para guardar los datos
+  var producto = $('#producto-input').val();
+  var correo = $('#cotizacion-correo-input').val();
+
+  console.log('Producto: ' + producto);
+  console.log('Correo electrónico: ' + correo);
+  // Blanquo de los campos
+  $('#producto-input').val('');
+  $('#cotizacion-correo-input').val('');
+});
 });
