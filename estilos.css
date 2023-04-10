@@ -68,6 +68,15 @@ footer a:hover {
   color: #D7E2FA;
 }
 
+.redes_sociales{
+  color: black;
+  padding: 15px;
+}
+
+.logos_redes{
+  color: black;
+}
+
 /* Formularios */
 .form-control:focus {
   border-color: #5a399e;
