@@ -1,7 +1,64 @@
 /* Color primario de fondo */
 body {
-  background-color: #D7E2FA;
+  background-image: url(img/Frame\ 2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+   color: white;
 }
+
+
+@media screen and (max-width:375xp) {
+  .backnav {
+    width: 100%;
+  }
+}
+
+
+/* Header o navbar*/
+
+.backnav{
+  background: rgba(32, 17, 5, 0.849);
+  background-image: url(img/backnav.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  background-blend-mode: darken;
+  box-shadow: 1px 31px 47px -17px rgba(0,0,0,0.52);
+-webkit-box-shadow: 1px 31px 47px -17px rgba(0,0,0,0.52);
+-moz-box-shadow: 1px 31px 47px -17px rgba(0,0,0,0.52);
+ 
+}
+
+
+.imgproducto{
+  background-position: center;
+ width: 300px;
+}
+
+
+.scroll-container {
+  
+  height: 800px;
+ 
+}
+
+a, .nav-link{
+  color:#ffffff ;
+  font-weight:bold;
+}
+
+.nav-pills {
+  --bs-nav-pills-border-radius: var(--bs-border-radius);
+  --bs-nav-pills-link-active-color: #ffffff;
+  --bs-nav-pills-link-active-bg: #552417;
+}
+/*Aplica la opacidad y el fondo no redondeado a la presentacion y equipo de trabajo*/
+.backpresent{
+  background-color: #c78a2e49;
+  border: none;
+}
+
+
 
 /* Color secundario en algunos elementos de la página */
 #servicios h2,
@@ -12,7 +69,12 @@ body {
 
 /* Color de acento en los títulos de la página */
 h1, h2, h3 {
-  color: #5a399e;
+  font-family: 'Inconsolata', monospace;
+  font-family: 'Racing Sans One', cursive;
+  font-size: 60px;
+  background: -webkit-linear-gradient(#383838bb, #c43f1e);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Margen a elementos principales de la página */
@@ -23,13 +85,13 @@ h1, h2, h3 {
 
 /* Botones */
 .btn-primary {
-  background-color: #5a399e;
-  border-color: #5a399e;
+  background-color: #ca5017;
+  border-color: #ca5017;
 }
 
 .btn-primary:hover {
-  background-color: #99CBFA;
-  border-color: #99CBFA;
+  background-color: #cab817;
+  border-color: #cab817;
   color: #fff;
 }
 
@@ -40,13 +102,6 @@ h1, h2, h3 {
   max-height: 250px;
 }
 
-
-img {
-  max-width: 100%;
-  height: auto;
-  max-width: 300px;
-}
-
 .producto img {
   max-width: 100%;
   height: auto;
@@ -55,9 +110,10 @@ img {
 
 /* Footer */
 footer {
-  background-color: #99CBFA;
+  background-color: #d1491f;
   padding: 20px;
   text-align: center;
+  border-radius: 20px;
 }
 
 footer a {
@@ -75,6 +131,10 @@ footer a:hover {
 
 .logos_redes{
   color: black;
+}
+
+#footerText{
+  color: #552417;
 }
 
 /* Formularios */
@@ -112,6 +172,18 @@ footer a:hover {
   display: block;
 }
 
-.presentacion-empresa {
-  margin-top: 50px;
+.margin-top {
+  margin-bottom: 100px;
+}
+
+/* Presentaciones Personal */
+
+.textosPersonales{
+  font-family: 'Oswald', sans-serif;
+  font-size: xx-large;
+}
+
+.titulosPesronales{
+  font-family: 'Racing Sans One', cursive;
+  font-size: xx-large;
 }

@@ -4,124 +4,202 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Briccio</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Racing+Sans+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
   <link rel="stylesheet" href="estilos.css">
+  <link rel="icon" href="img/briccio.ico">
 </head>
 <body>
   
     <!-- HEADER --> 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <h1 class="mx-auto"><a class="navbar-brand" href="#">Briccio</a></h1>
-    </div>
-  </nav>
-  
-    <!-- PRESENTACIONES -->
-  <div class="jumbotron jumbotron-fluid bg-light presentacion-empresa">
-    <div class="container">
-      <h2 class="text-center">Presentación de la empresa</h2>
-      <p class="lead text-center">Presentacion empresa.</p>
-    </div>
-  </div>
-  
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h2 class="text-center">Equipo de trabajo</h2>
-      <p class="lead text-center">Brissio Pablo - Centurion Facundo - Golzalez Alexander</p>
-    </div>
-  </div>
+    
+    <nav class="navbar navbar-expand-ms backnav  sticky-top">
+     <div class="container-fluid">
+        
+            <a href="#" class="p" >
+            
+              <img class="img-fluid pt-3" src="img/briccio.ico" alt="icono" width="100" height="100">  
+            
+            </a>
+          
+        
+      
+        <ul class="nav float-end nav-pills mx-0 p-4 nav">
+          <li class="nav-item"><button type="submit" class="btn btn-primary">home</button></li>
+          <li class="nav-item"><a href="#present" class="nav-link">Presentación</a></li>
+          <li class="nav-item"><a href="#equipo" class="nav-link">Equipo de trabajo</a></li>
+          <li class="nav-item"><a href="#productos" class="nav-link">Productos</a></li>
+          <li class="nav-item"><a href="#consultas" class="nav-link">Consultas</a></li>
+        </ul> 
 
+     </div> 
+      
+
+    </nav>
+    <!-- PRESENTACIONES -->
+    <section>
+ 
+    </div>
+      <div id="present" class="jumbotron  jumbotron-fluid position mt-5 pt-3 start-0 scroll-container  mb-5 rouded"> 
+    
+        <div class="row">
+          <div class="col-6 px-4">
+            <div class="d-flex p-3">
+              <img class="img-fluid" src="img/Group 2.png" alt="esto" width="839" height="640"></img>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="pt-3 mt-5"> 
+              <h1  >Presentación de empresa</h1>
+              <p class="lead">¿Quieres llevar tu juego al siguiente nivel? ¡Tenemos las zapatillas de basquet más novedosas para ti! Desde amortiguación de alta tecnología hasta diseños aerodinámicos y transpirables, nuestras zapatillas te proporcionarán la comodidad y el soporte que necesitas en la cancha. Ya sea que seas un jugador experimentado o un principiante, nuestras zapatillas de alta calidad están diseñadas para mejorar tu rendimiento. ¡No pierdas la oportunidad de jugar con lo mejor! ¡Compra ahora y prepárate para dominar la cancha!</p>
+              <p class="lead">Puede hacer su consultas <a style="color: #df4b22;"href="#consultas">aquí</a></p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  
+  <!-- EQUIPO DE TRABAJO -->
+ <section id="equipo">
+  <div class="jumbotron jumbotron-fluid backequipo shadow-lg  mb-3  rounded">
+    <h1 class="text-center text-white p-5" >Equipo de trabajo</h1>
+    <div class="container ">
+
+      <div class="card mx-auto mb-3 bg-dark text-light">
+        <div class="row g-0 ">
+          <div class="col-md-4 "> 
+            <div class="card  backpresent">
+              <img class="mx-auto img-fluid" src="img/Keanu.jpg"> 
+              <p class="lead text-center text-warning ">Gonzalez Alexander</p>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body text-light">
+              <h5 class="card-title titulosPesronales">Gerente General</h5>
+              <p class="card-text text-light textosPersonales">El creador de la empresa de indumentaria y accesorios deportivos es un apasionado del baloncesto. Su visión se centra en proporcionar productos de calidad a precios asequibles para los aficionados al deporte. Su experiencia como jugador le inspiró para crear una marca que reflejara su amor por el juego..</p>
+              <p class="card-text "><small class="text-light-emphasis ">Ex Jugador Profesional - Entrenador Tactico Chicago Bulls</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+   <section class="pb-3">
+    <div class="card mx-auto mb-3 bg-dark text-light ">
+      <div class="row g-0 ">
+        <div class="col-md-4 "> 
+          <div class="card backpresent"> 
+            <img class="mx-auto img-fluid" src="img/laurence.jpg" > 
+            <p class="lead text-center text-warning">Brissio Pablo</p>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body text-light">
+            <h5 class="card-title text-light titulosPesronales">Co-Gerente General</h5>
+            <p class="card-text text-light textosPersonales">El co-creador de la empresa de indumentaria y accesorios deportivos fue el entrenador del creador. Su relación de confianza y respeto mutuo durante los años de entrenamiento llevó a que juntos crearan una marca que reflejara su pasión por el baloncesto. Su visión compartida de calidad y accesibilidad impulsó el éxito de la empresa..</p>
+            <p class="card-text"><small class="text-light-emphasis ">Entrenador Actualmente - Memphis Grizzlies</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+      
+  
 <!-- PRESENTACION DE IMAGENES DE PRODUCTOS -->
-<div class="container">
-  <div class="row">
-    <div class="col-md-4">
+
+  <section id="productos">
+    <div class="card-group" style="padding:50px ;">
       <div class="card">
-        <img class="card-img-top" src="zapa.jpg" alt="Imagen 1">
+        <img src="img/luka2-obsidian.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Producto Nro 1</p>
+          <h5 class="card-title">- Zapatillas -</h5>
+          <p class="card-text">Jordan Luka 2 - "Obsidian"</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/zion naruto.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">- Zapatillas -</h5>
+          <p class="card-text">Jordan Zion 1 - "Naruto"</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/Tatum1PinkLemonade.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">- Zapatillas -</h5>
+          <p class="card-text">Jordan Tatum 1 - "Pink Lemonade"</p>
         </div>
       </div>
     </div>
-    <div class="col-md-4">
+
+    <div class="card-group" style="padding:50px ;">
       <div class="card">
-        <img class="card-img-top" src="zapa.jpg" alt="Imagen 2">
+        <img src="img/kobe 5 chaos.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Producto Nro 2</p>
+          <h5 class="card-title">- Zapatillas -</h5>
+          <p class="card-text">Nike Kobe 5 - "Chaos"</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/kyrie 7 x concepts.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">- Zapatillas -</h5>
+          <p class="card-text">Nike Kyrie 7 - "Concepts"</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/kd15-BknNets.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">- Zapatillas -</h5>
+          <p class="card-text">Nike KD 15 - "Brooklyn Nets"</p>
         </div>
       </div>
     </div>
-    <div class="col-md-4">
-      <div class="card">
-        <img class="card-img-top" src="zapa.jpg" alt="Imagen 3">
-        <div class="card-body">
-          <p class="card-text">Producto Nro 3</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card">
-        <img class="card-img-top" src="zapa.jpg" alt="Imagen 4">
-        <div class="card-body">
-          <p class="card-text">Producto Nro 4</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card">
-        <img class="card-img-top" src="zapa.jpg" alt="Imagen 5">
-        <div class="card-body">
-          <p class="card-text">Producto Nro 5</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card">
-        <img class="card-img-top" src="zapa.jpg" alt="Imagen 6">
-        <div class="card-body">
-          <p class="card-text">Producto Nro 6</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+  </section>
 
   <!-- Formularios -->
-  <div class="row">
-    <div class="col-md-6">
-      <div class="card">
-        <div class="card-body">
-          <h3 class="card-title">Contacto</h3>
+  <div  id="consultas" class="row pb-3">
+    <div class="col-md-6" style="padding-left: 50px; padding-right: 30px;">
+      <div class="card shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+        <div class="card-body ">
+          <h3 class="card-title ">Contacto</h3>
           <form id="contact-form">
             <div class="mb-3">
               <label for="nombre-input" class="form-label">Nombre y Apellido</label>
-              <input type="text" class="form-control" id="nombre-input" required>
+              <input type="text" class="form-control" id="nombre-input">
             </div>
             <div class="mb-3">
               <label for="correo-input" class="form-label">Correo electrónico</label>
-              <input type="email" class="form-control" id="correo-input" required>
+              <input type="email" class="form-control" id="correo-input">
             </div>
             <div class="mb-3">
               <label for="telefono-input" class="form-label">Teléfono</label>
-              <input type="tel" class="form-control" id="telefono-input" required>
+              <input type="tel" class="form-control" id="telefono-input">
             </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
           </form>
         </div>
       </div>
     </div>
-    <div class="col-md-6">
-      <div class="card">
+
+    <div class="col-md-6" style="padding-left: 50px; padding-right: 30px;">
+      <div class="card shadow-lg p-3 mb-5 bg-body-tertiary rounded">
         <div class="card-body">
           <h3 class="card-title">Cotización de un Producto</h3>
           <form id="cotizacion-form">
             <div class="mb-3">
               <label for="producto-input" class="form-label">Producto a Cotizar</label>
-              <input type="text" class="form-control" id="producto-input" required>
+              <input type="text" class="form-control" id="producto-input">
             </div>
             <div class="mb-3">
               <label for="cotizacion-correo-input" class="form-label">Correo electrónico</label>
-              <input type="email" class="form-control" id="cotizacion-correo-input" required>
+              <input type="email" class="form-control" id="cotizacion-correo-input">
             </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
           </form>
@@ -135,7 +213,7 @@
     <footer class="container-fluid bg-light py-3">
       <div class="row justify-content-center">
         <div class="col-md-6 col-lg-4">
-          <h4 class="text-center mb-4">Conoce más sobre nosotros</h4>
+          <h4 class="text-center mb-4" id="footerText">Conoce más sobre nosotros</h4>
           <hr>
           <div class="row justify-content-center">
             <a href="https://www.instagram.com" target="_blank" rel="noopener"><i class="bi bi-instagram logos_redes"></i><p class="redes_sociales">Instagram</p></a>
@@ -148,9 +226,9 @@
     
     
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <script src="second.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+<script src="second.js"></script>
 </body>
 </html>
