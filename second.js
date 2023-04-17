@@ -2,9 +2,9 @@ $(document).ready(function() {
   // Validación del formulario de contacto
   $('#contact-form').submit(function(event) {
     event.preventDefault(); 
-    var nombre = $('#nombre-input').val();
-    var correo = $('#correo-input').val();
-    var telefono = $('#telefono-input').val();
+    let nombre = $('#nombre-input').val();
+    let correo = $('#correo-input').val();
+    let telefono = $('#telefono-input').val();
 
     if (nombre === '' || correo === '' || telefono === '') {
       alert('Por favor, complete todos los campos del formulario de contacto.');
@@ -22,8 +22,8 @@ $(document).ready(function() {
   // Validación del formulario de cotización
   $('#cotizacion-form').submit(function(event) {
     event.preventDefault(); 
-    var producto = $('#producto-input').val();
-    var correo = $('#cotizacion-correo-input').val();
+    let producto = $('#producto-input').val();
+    let correo = $('#cotizacion-correo-input').val();
 
     if (producto === '' || correo === '') {
       alert('Por favor, complete todos los campos del formulario de cotización.');
